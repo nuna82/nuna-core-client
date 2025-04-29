@@ -21,9 +21,9 @@ export default function ReadOur() {
 
         <div >
             {
-                isHidden && <header className="text-center  bg-[#1B1B2D] flex items-center justify-between px-2">
+                isHidden && <header className="text-center  bg-[#1B1B2D] flex items-center justify-between px-2 py-1">
                     <div></div>
-                    <Link className="underline" href={"/terms"}>read our philosophy creating this platform</Link>
+                    <Link className="underline opacity-80" href={"/terms"}>read our philosophy creating this platform</Link>
                     {/* close icom  */}
                     <X onClick={handleClose} className="cursor-pointer" />
                 </header>
