@@ -11,17 +11,17 @@ import chat_ic from "../icons/chat-ic.svg";
 import profile_ic from "../icons/profile-ic.svg";
 import setting_ic from "../icons/settings-ic.svg";
 import author_room from "../icons/author-room-ic.svg";
+import add_post_ic from "../icons/add-post-ic.svg";
 
 const Sidebar = () => {
   return (
-    <aside className="w-[293px] border-[#1B1B2D] border-r-2 h-screen  py-4">
+    <aside className="w-[293px] border-[#1B1B2D] border-r-2 h-screen py-4 space-y-6">
       {/* logo  */}
       <Image
         src={Logo}
         width={88}
         height={40}
         alt="nuna logo"
-        className="mb-6"
       />
 
       <ul className="space-y-1 w-72">
@@ -68,6 +68,11 @@ const Sidebar = () => {
           </Link>
         </li>
       </ul>
+
+      <button className="text-white bg-blue-500 flex items-center px-13 pt-2 pb-2.5 rounded-md gap-2 text-base">
+        <Image src={add_post_ic} width={24} height={24} alt="note icon"/>
+        add new post
+      </button>
     </aside>
   );
 };
