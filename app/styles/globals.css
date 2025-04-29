@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --main-bg-color: #05050D
+}
+
+*{
+  outline: none;
+}
+
+.container {
+  @apply max-w-[1240px] mx-auto px-5 sm:px-6 lg:px-8;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: #fff;
+  font-family: roboregular;
+}
+
+@font-face {
+  font-family: "robotobold";
+  src: url(../fonts/robotobold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "roboregular";
+  src: url(../fonts/robotoregular.ttf) format("truetype");
+}
