@@ -60,8 +60,7 @@ const SignupForm = () => {
   };
   return (
     <div>
-      <div className="container py-5">
-      
+      <div className="py-5">
         <h1 className="text-[40px] leading-[100%] font-[robotobold] mb-2">
           Register in easiest way
         </h1>

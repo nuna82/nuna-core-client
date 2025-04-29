@@ -32,22 +32,24 @@ export default function ToastProvider({ children }: ToastProviderProps) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <link rel="icon" href="./logo_favicon.ico" sizes="any" />
+        <link rel="icon" href="./logo_favicon.ico" sizes="" />
 
-        <div className="flex flex-row h-screen w-screen gap-16">
-          <Image
-            src={palma}
-            className="h-screen w-2/3"
-            alt="image"
-            width={500}
-            height={500}
-          />
-          <div className="container py-5">
-            <Link href="/" className="mb-72 inline-block">
-              <Image src={logo} alt="image" width={172} height={64} />
+        <div className="flex flex-row h-screen w-screen">
+          <Image src={palma} className="h-screen" alt="image" />
+          <div className="flex flex-col justify-between py-10 px-15 flex-1">
+            <Link href="/" className="inline-block">
+              <Image src={logo} alt="image" width={150} />
             </Link>
 
             {children}
+
+            <div className="flex items-center justify-between w-full">
+              <p>
+                reach us:{" "}
+                <span className=" text-white/35">khamidov.ko@gmail.com</span>
+              </p>
+              <Link href="/terms">read our Philosophy</Link>
+            </div>
           </div>
         </div>
         <ToastContainer />
