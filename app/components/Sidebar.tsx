@@ -44,7 +44,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className="hover:bg-[#1B1B2D] rounded-md py-2 px-2">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/user/BUYERGA_APIDAN_UERNAME_KELISHI_KERAK" className="flex items-center gap-2">
             <Image src={profile_ic} width={24} height={24} alt="home page" />
             <p className="text-base">My profile</p>
           </Link>

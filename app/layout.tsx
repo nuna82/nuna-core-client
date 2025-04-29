@@ -1,8 +1,9 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import { toast, ToastContainer } from "react-toastify";
+import Sidebar from "./components/Sidebar";
+import ReadOur from "./components/ReadOur";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,14 +24,18 @@ interface ToastProviderProps {
   children: React.ReactNode;
 }
 
-export default function ToastProvider({ children }: ToastProviderProps)  {
+export default function ToastProvider({ children }: ToastProviderProps) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <link rel="icon" href="./logo_favicon.ico" sizes="any" />
-        {children}
+        <ReadOur />
+        <div className="container flex">
+          <Sidebar />
+          {children}
+        </div>
         <ToastContainer />
       </body>
     </html>
