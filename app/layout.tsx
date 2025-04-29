@@ -30,12 +30,7 @@ export default function ToastProvider({ children }: ToastProviderProps) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <link rel="icon" href="./logo_favicon.ico" sizes="any" />
-        <ReadOur />
-        <div className="container flex">
-          <Sidebar />
           {children}
-        </div>
         <ToastContainer />
       </body>
     </html>
