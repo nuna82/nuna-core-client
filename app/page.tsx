@@ -1,46 +1,19 @@
-
-// components 
+// components
+import Image from "next/image";
 import ReadOur from "./components/ReadOur";
 
-// assets 
-import Logo from "./icons/logo.svg"
+// assets
+import Logo from "./icons/logo.svg";
+import Sidebar from "./components/Sidebar";
 
 export default function Home() {
-
-
   return (
-
-
     <div>
-
       {/* header or read our  */}
       <ReadOur />
-
-      {/* main  */}
-      <main className="container ">
-
-        {/* left sidebare  */}
-        <aside>
-
-          {/* logo  */}
-          <img src={Logo} alt="nuna logo" />
-
-          <ul>
-            <li></li>
-          </ul>
-
-        </aside>
-
-        {/* center  */}
-        <section>
-
-        </section>
-
-        {/* right sidebar  */}
-        <aside>
-
-        </aside>
-
+      <main className="flex container">
+        <Sidebar />
+        buyerga post joylaydigan qismini qilishimiz mumkun
       </main>
     </div>
   );

@@ -3,8 +3,8 @@ import Link from "next/link";
 // src/pages/GuidePage.jsx
 const page = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center p-6">
-            <div className="max-w-3xl shadow-md rounded-lg p-8 space-y-6">
+        <div className="container flex items-center justify-center p-6 text-center">
+            <div className="w-2/3 text-justify shadow-md rounded-lg p-8 space-y-6">
                 <h1 className="text-4xl font-bold text-center text-white">
                     Welcome to NUNA
                 </h1>
