@@ -27,3 +27,15 @@ body {
   font-family: "roboregular";
   src: url(../fonts/robotoregular.ttf) format("truetype");
 }
+
+.input[type="checkbox"] {
+  @apply hidden;
+}
+
+.custom-checkbox {
+  @apply inline-block w-5 h-5 rounded relative cursor-pointer border-2 border-solid border-[#333] after:content-[""] after:absolute after:-translate-x-2/4 after:-translate-y-2/4 after:w-2.5 after:h-2.5 after:bg-[#333] after:opacity-0 after:rounded-sm after:left-2/4 after:top-2/4;
+}
+
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+  @apply opacity-100;
+}

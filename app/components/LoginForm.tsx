@@ -1,20 +1,13 @@
 "use client"
 import Image from "next/image"
-import palma from '../component_img/palmas.jpg'
-import logo from '../icons/logo.svg'
 import Link from "next/link"
-import user_profile_icon from '../icons/user_profile_icon.svg'
 import emailicon from '../icons/email_icon.svg'
 import { useState } from "react"
 
-const page = () => {
+const LoginForm = () => {
     const [isLinkSended, setLinkSended] = useState(true)
     return (
-        <div className="flex flex-row h-screen w-screen gap-16">
-            <Image src={palma} className="h-screen w-2/3" alt="image" width={500} height={500} />
-            <div className="container py-5">
-                <Link href='/' className="mb-72 inline-block"><Image src={logo} alt="image" width={172} height={64} /></Link>
-
+            <div className="container">
                 {isLinkSended && <><h1 className="text-[40px] leading-[100%] font-[robotobold] mb-2">Log in without password</h1>
                     <p className="text-base text-[#8C8998] mb-8">we will send magic link to your email, just click it</p>
 
@@ -47,8 +40,7 @@ const page = () => {
 
             </div>
 
-        </div>
     )
 }
 
-export default page
+export default LoginForm
