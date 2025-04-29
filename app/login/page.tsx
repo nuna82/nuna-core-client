@@ -10,8 +10,8 @@ import { useState } from "react"
 const page = () => {
     const [isLinkSended, setLinkSended] = useState(true)
     return (
-        <div className="flex flex-row h-screen w-screen">
-            <Image src={palma} className="h-screen w-1/2" alt="image" width={500} height={500} />
+        <div className="flex flex-row h-screen w-screen gap-16">
+            <Image src={palma} className="h-screen w-2/3" alt="image" width={500} height={500} />
             <div className="container py-5">
                 <Link href='/' className="mb-72 inline-block"><Image src={logo} alt="image" width={172} height={64} /></Link>
 
