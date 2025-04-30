@@ -40,3 +40,73 @@ export const SidebareLinks = [
 ]
 
 export const topics = ["programs", "vibe_coding", "cats", "ai", "socials", "american psycho"];
+
+// assests 
+import UserProfileImage from "../icons/sidebar/profile.png"
+import Image1 from "../icons/data/image1.png";
+import Image2 from "../icons/data/image2.png";
+
+export const posts = [
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image1,
+        support: 718,
+    },
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+    ,
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+    ,
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+    ,
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+    ,
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+    ,
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+    ,
+    {
+        userImage: UserProfileImage,
+        postName: "n#community_name",
+        descr: "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page",
+        image: Image2,
+        support: 54,
+    }
+]

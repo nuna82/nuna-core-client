@@ -19,7 +19,7 @@ import Ads from "./Ads";
 
 export default function LeftSidebar() {
     return (
-        <aside className="w-full space-y-5">
+        <aside className="w-full space-y-5 sticky top-5">
 
             {/* profile informations */}
             <Link href={"/profile"} className="flex items-center gap-3 hover:bg-[#1B1B2D] py-1 rounded-r-lg cursor-pointer px-3">

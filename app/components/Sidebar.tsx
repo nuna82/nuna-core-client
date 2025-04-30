@@ -22,7 +22,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="space-y-5">
+    <aside className="space-y-5 sticky top-5">
       {/* logo  */}
         <Link href={"/"} className="flex">
           <Image
