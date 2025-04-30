@@ -32,7 +32,7 @@ export default function ToastProvider({ children }: ToastProviderProps) {
       >
         <link rel="icon" href="./logo_favicon.ico" sizes="any" />
         <ReadOur />
-        <div className="container flex">
+        <div className="flex">
           <Sidebar />
           {children}
         </div>

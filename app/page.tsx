@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <div>
       {/* header or read our  */}
-      <ReadOur />
       <main className="flex container">
-        <Sidebar />
         buyerga post joylaydigan qismini qilishimiz mumkun
       </main>
     </div>

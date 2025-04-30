@@ -59,7 +59,7 @@ const page = () => {
             width={400}
             height={400}
             alt="fur"
-            className="w-52 h-52 rounded-full absolute top-20  border-4 border-[#05050D]"
+            className="w-52 h-52 rounded-full absolute top-40  border-4 border-[#05050D]"
           />
         </div>
           <h1 className="text-3xl font-[robotobold]">Mardonbek Khamidov</h1>
