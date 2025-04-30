@@ -3,6 +3,7 @@
 import LeftSidebar from "../components/LeftSidebar";
 import ReadOur from "../components/ReadOur";
 import Sidebar from "../components/Sidebar";
+import Header from "../components/Header";
 
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
     return (
@@ -18,7 +19,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                 </div>
 
                 <div className="flex-1 border-x border-[#30305D] max-w-[630px] h-screen py-5">
-                    {/* header here  */}
+                    <Header />
                     {children}
                 </div>
 

@@ -14,6 +14,9 @@ import Link from "next/link";
 // topics 
 import { topics } from "../data/data";
 
+// components 
+import Ads from "./Ads";
+
 export default function LeftSidebar() {
     return (
         <aside className="w-[95%] space-y-5">
@@ -43,6 +46,10 @@ export default function LeftSidebar() {
                     ))}
                 </div>
             </div>
+
+            {/* ADS  */}
+            <Ads/>
+
         </aside>
     )
 }

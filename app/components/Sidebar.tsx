@@ -35,49 +35,49 @@ const Sidebar = () => {
 
       {/* Sidebar links  */}
       <ul className="space-y-2">
-        <li className={`hover:bg-[#1B1B2D] p-2 cursor-pointer ${pathname === "/" && "bg-[#1B1B2D]"}`}>
+        <li className={`hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer ${pathname === "/" && "bg-[#1B1B2D]"}`}>
           <Link href="/" className="flex items-center gap-5">
             <Image src={home_ic} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">Home</p>
           </Link>
         </li>
 
-        <li className="hover:bg-[#1B1B2D] p-2 cursor-pointer">
+        <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer">
           <Link href="/" className="flex items-center gap-5">
             <Image src={search_ic} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">Search page</p>
           </Link>
         </li>
 
-        <li className="hover:bg-[#1B1B2D] p-2">
+        <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg">
           <Link href="/" className="flex items-center gap-5">
             <Image src={notification} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">Notifications</p>
           </Link>
         </li>
 
-        <li className="hover:bg-[#1B1B2D] p-2 cursor-pointer">
+        <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer">
           <Link href="/" className="flex items-center gap-5">
             <Image src={profile_ic} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">My profile</p>
           </Link>
         </li>
 
-        <li className="hover:bg-[#1B1B2D] p-2 cursor-pointer">
+        <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer">
           <Link href="/" className="flex items-center gap-5">
             <Image src={chat_ic} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">Chats</p>
           </Link>
         </li>
 
-        <li className="hover:bg-[#1B1B2D] p-2 cursor-pointer">
+        <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer">
           <Link href="/" className="flex items-center gap-5">
             <Image src={setting_ic} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">Settings</p>
           </Link>
         </li>
 
-        <li className="hover:bg-[#1B1B2D] p-2 cursor-pointer">
+        <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer">
           <Link href="/" className="flex items-center gap-5">
             <Image src={author_room} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">Authors’ room</p>
