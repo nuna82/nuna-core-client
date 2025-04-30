@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
       use: ["@svgr/webpack"],
     });
     return config;
-  },
+  }
 };
 
 export default nextConfig;

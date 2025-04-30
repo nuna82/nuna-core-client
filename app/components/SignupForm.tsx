@@ -46,7 +46,7 @@ const SignupForm = () => {
       name: "",
       email: "",
     });
-    toast.success("Link sended successfully !", {
+    toast.success("Link sent successfully !", {
       position: "top-center",
       autoClose: 300,
       hideProgressBar: false,
