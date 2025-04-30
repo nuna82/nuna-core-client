@@ -38,3 +38,5 @@ export const SidebareLinks = [
         name: "Authors’ room"
     },
 ]
+
+export const topics = ["programs", "vibe_coding", "cats", "ai", "socials", "american psycho"];
