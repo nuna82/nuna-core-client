@@ -57,7 +57,7 @@ const Sidebar = () => {
         </li>
 
         <li className="hover:bg-[#1B1B2D] p-2 rounded-l-lg cursor-pointer">
-          <Link href="/" className="flex items-center gap-5">
+          <Link href="/user/@username" className="flex items-center gap-5">
             <Image src={profile_ic} width={30} height={30} alt="home page" />
             <p className="font-bold text-lg">My profile</p>
           </Link>
