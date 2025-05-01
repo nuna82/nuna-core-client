@@ -38,7 +38,7 @@ export default function Home() {
 
                             {/* support number */}
                             <div className="flex items-center gap-1 cursor-pointer select-none">
-                                <ArrowBigUp  className="text-[#8989E4]"/>
+                                <ArrowBigUp className="text-[#8989E4]" />
                                 <span>{post.support}</span>
                             </div>
                         </div>
