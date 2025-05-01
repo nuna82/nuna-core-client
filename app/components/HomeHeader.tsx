@@ -11,14 +11,14 @@ export default function HomeHeader() {
             <ul className="w-[95%] mx-auto flex items-center justify-between gap-3">
 
                 {/* links  here */}
-                <li className={`flex-1 text-center py-3  ${pathname === "/" ? "border-white border-b" : ""}`}>
-                    <Link href="/">Posts</Link>
+                <li className={`flex-1 text-center   ${pathname === "/" ? "border-white border-b" : ""}`}>
+                    <Link className="block py-3" href="/">Posts</Link>
                 </li>
-                <li className={`flex-1 text-center py-3  ${pathname.startsWith("/users") ? "border-white border-b" : ""}`}>
-                    <Link href="/users">Users</Link>
+                <li className={`flex-1 text-center   ${pathname.startsWith("/users") ? "border-white border-b" : ""}`}>
+                    <Link className="block py-3" href="/users">Users</Link>
                 </li>
-                <li className={`flex-1 text-center py-3  ${pathname.startsWith("/communities") ? "border-white border-b" : ""}`}>
-                    <Link href="/communities">Communities</Link>
+                <li className={`flex-1 text-center   ${pathname.startsWith("/communities") ? "border-white border-b" : ""}`}>
+                    <Link className="block py-3" href="/communities">Communities</Link>
                 </li>
             </ul>
         </div>
