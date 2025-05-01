@@ -24,14 +24,14 @@ const Sidebar = () => {
   return (
     <aside className="space-y-5 sticky top-5">
       {/* logo  */}
-        <Link href={"/"} className="flex">
-          <Image
-            src={Logo}
-            width={48}
-            height={48}
-            alt="nuna logo"
-          />
-        </Link>
+      <Link href={"/"} className="flex">
+        <Image
+          src={Logo}
+          width={48}
+          height={48}
+          alt="nuna logo"
+        />
+      </Link>
 
       {/* Sidebar links  */}
       <ul className="space-y-2">
@@ -85,10 +85,12 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      <button className="w-[95%] flex items-center justify-center bg-[#0C8CE9] py-3 rounded-lg hover:opacity-90 cursor-pointer gap-3">
-        <Image src={add_post_ic} width={24} height={24} alt="note icon" />
-        add new post
-      </button>
+      <Link href={"/create-post"}>
+        <button className="w-[95%] flex items-center justify-center bg-[#0C8CE9] py-3 rounded-lg hover:opacity-90 cursor-pointer gap-3">
+          <Image src={add_post_ic} width={24} height={24} alt="note icon" />
+          add new post
+        </button>
+      </Link>
     </aside>
   );
 };

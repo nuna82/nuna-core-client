@@ -26,10 +26,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-<<<<<<< HEAD
-=======
         <TopLoader/> 
->>>>>>> c83ac23cfd7240f07f5dd4b769c17eb61927c737
         {children}
         <ToastContainer />
       </body>
