@@ -28,7 +28,7 @@ export default function ToastProvider({ children }: ToastProviderProps) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-          {children}
+        {children}
         <ToastContainer />
       </body>
     </html>

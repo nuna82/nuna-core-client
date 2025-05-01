@@ -14,7 +14,7 @@ const page = () => {
     <div className="">
       {/* user profile and banner */}
 
-      <section className="relative w-full h-[250px] flex flex-col items-center">
+      <section className="relative w-full h-[250px] flex flex-col items-center -z-10">
         {/* Background image */}
         <Image
           src={bannerbg} // replace with your sunset bg
@@ -26,7 +26,7 @@ const page = () => {
         <Image
           src={userprph} // replace with your circle image
           alt="Profile"
-          className="w-32 h-32 object-cover z-10 rounded-full border-4 border-black absolute bottom-3"
+          className="w-32 h-32 object-cover z-10 rounded-full border-4 border-transparent absolute bottom-3"
         />
       </section>
 
