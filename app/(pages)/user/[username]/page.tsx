@@ -58,7 +58,7 @@ const page = () => {
           </span>
         </div>
 
-        <button className="px-10 py-2 bg-[#0C8CE9] hover:bg-blue-500 transition rounded text-white text-sm font-medium mb-4">
+        <button className="px-20 py-2 bg-[#0C8CE9] hover:bg-blue-500 transition rounded text-white text-sm font-medium mb-4">
           Follow
         </button>
       </section>
