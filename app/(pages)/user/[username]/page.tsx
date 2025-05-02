@@ -8,6 +8,10 @@ import { ArrowBigUp, Link, MessageSquare } from "lucide-react";
 import { usePathname } from "next/navigation";
 import PostCard from "@/app/components/PostCard";
 
+// components 
+import HomeHeader from "@/app/reuseable/HomeHeader";
+
+
 const page = () => {
   const pathname = usePathname();
   return (
@@ -63,17 +67,18 @@ const page = () => {
         </button>
       </section>
 
-      <section className="flex items-center justify-between px-6 border-b-2 border-[#30305D]">
-        <p className="w-1/3 pb-3 text-center border-b-2 border-transparent hover:border-white">
-          Posts
-        </p>
-        <p className="w-1/3 pb-3 text-center border-b-2 border-transparent hover:border-white">
-          Communities
-        </p>
-        <p className="w-1/3 pb-3 text-center border-b-2 border-transparent hover:border-white">
-          Partnerships
-        </p>
-      </section>
+      {/* components  */}
+      <HomeHeader
+        // here is texts of buttons 
+        first="Posts"
+        second="Communities"
+        third="Partnerships"
+
+        // this is for links @Boburov you can change this links, and add pages for this links
+        firstLink="/user/@username"
+        secondLink="/users"
+        thirdLink="/communities" />
+
       <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} />
     </div>
   );
