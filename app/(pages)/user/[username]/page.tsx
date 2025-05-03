@@ -6,7 +6,7 @@ import bannerbg from "@/app/icons/banner-bg.png";
 import userprph from "@/app/icons/user-pr-ph.jpg";
 import { ArrowBigUp, Link, MessageSquare } from "lucide-react";
 import { usePathname } from "next/navigation";
-import PostCard from "@/app/components/PostCard";
+import PostCard from "@/app/reuseable/PostCard";
 
 // components 
 import HomeHeader from "@/app/reuseable/HomeHeader";
@@ -79,7 +79,12 @@ const page = () => {
         secondLink="/users"
         thirdLink="/communities" />
 
-      <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} />
+      {/* <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} /> */}
+
+      <div className="w-[95%] mx-auto">
+        <PostCard PostName={"boburov.dev"} UserImage={userprph} descr={"title of the post that was posted to community by ordinary user who followed to this community by changing select in post page"} PostImage={userprph} SupportNumber={718} />
+      </div>
+
     </div>
   );
 };
