@@ -63,6 +63,17 @@ body {
   src: url(../fonts/robotoregular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "robolight";
+  src: url(../fonts/robotolight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "robomed";
+  src: url(../fonts/robomed.ttf) format("truetype");
+}
+
+
 .input[type="checkbox"] {
   @apply hidden;
 }

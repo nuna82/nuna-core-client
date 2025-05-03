@@ -18,16 +18,16 @@ const PostCard = ({ image, name, likes, comments }: PostCardProps) => {
             alt="Post image"
             className="w-7 h-7 rounded-full"
           />
-          <span className="text-md font-medium">n#{name}</span>
+          <span className="text-md font-[robomed]">n#{name}</span>
         </div>
-        <p>
+        <p className="font-[roboregular] font-medium">
           title of the post that was posted to community by ordinary user who
           followed to this community by changing select in post page
         </p>
       </div>
 
       <Image
-        className="w-[595px] h-[296px] object-cover rounded-lg"
+        className="w-[595px] h-[296px] object-cover rounded-lg flex"
         src={image}
         width={595}
         height={296}

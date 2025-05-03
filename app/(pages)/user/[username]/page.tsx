@@ -9,7 +9,6 @@ import { usePathname } from "next/navigation";
 import PostCard from "@/app/components/PostCard";
 
 const page = () => {
-  const pathname = usePathname();
   return (
     <div className="">
       {/* user profile and banner */}
@@ -26,25 +25,29 @@ const page = () => {
         <Image
           src={userprph} // replace with your circle image
           alt="Profile"
-          className="w-32 h-32 object-cover z-10 rounded-full border-4 border-transparent absolute bottom-3"
+          className="w-32 h-32 object-cover z-10 rounded-full border-4 border-[#05050D] absolute bottom-5 "
         />
       </section>
 
       {/* user information */}
       <section className="text-center text-white">
-        <h1 className="text-2xl font-bold mb-1">boburov.dev</h1>
+        <h2 className="font-bold text-2xl first-letter:uppercase">
+          boburov.dev
+        </h2>
 
-        <p className="text-blue-400 text-base mb-1">@boburov.dev</p>
-
-        <p className="text-[#8989E4] text-xs mb-2">
-          bio of following channel of user, changed after registration.
+        <p className="text-base font-[roboregular] text-blue-400 ">
+          @boburov.dev
         </p>
 
-        <p className="text-sm text-white cursor-pointer hover:underline mb-2">
+        <p className="text-[text-xs font-[robolight] text-[#8989E4] mb-4 text-justify px-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+
+        <p className="text-sm hover:underline text-white cursor-pointer mb-2">
           more →
         </p>
 
-        <div className="flex justify-center gap-4 text-sm mb-7">
+        <div className="flex justify-center gap-4 mb-7 text-sm">
           <span>
             <strong>718</strong>{" "}
             <span className="text-[#8989E4]">· followers</span>
@@ -58,7 +61,7 @@ const page = () => {
           </span>
         </div>
 
-        <button className="px-20 py-2 bg-[#0C8CE9] hover:bg-blue-500 transition rounded text-white text-sm font-medium mb-4">
+        <button className="text-white text-sm font-medium px-20 py-2 transition rounded mb-4   bg-[#0C8CE9] hover:bg-blue-500 ">
           Follow
         </button>
       </section>
