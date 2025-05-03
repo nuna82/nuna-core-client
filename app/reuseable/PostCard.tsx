@@ -22,7 +22,7 @@ export default function Home({ PostName, UserImage,descr, PostImage,SupportNumbe
                     src={UserImage}
                     alt={PostName}
                 />
-                <p>{"postName"}</p>
+                <p>{PostName}</p>
             </Link>
 
             {/* descr  */}
