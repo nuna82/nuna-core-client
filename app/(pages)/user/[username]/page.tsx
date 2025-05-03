@@ -6,7 +6,11 @@ import bannerbg from "@/app/icons/banner-bg.png";
 import userprph from "@/app/icons/user-pr-ph.jpg";
 import { ArrowBigUp, Link, MessageSquare } from "lucide-react";
 import { usePathname } from "next/navigation";
-import PostCard from "@/app/components/PostCard";
+import PostCard from "@/app/reuseable/PostCard";
+
+// components 
+import HomeHeader from "@/app/reuseable/HomeHeader";
+
 
 const page = () => {
   return (
@@ -66,18 +70,24 @@ const page = () => {
         </button>
       </section>
 
-      <section className="flex items-center justify-between px-6 border-b-2 border-[#30305D]">
-        <p className="w-1/3 pb-3 text-center border-b-2 border-transparent hover:border-white">
-          Posts
-        </p>
-        <p className="w-1/3 pb-3 text-center border-b-2 border-transparent hover:border-white">
-          Communities
-        </p>
-        <p className="w-1/3 pb-3 text-center border-b-2 border-transparent hover:border-white">
-          Partnerships
-        </p>
-      </section>
-      <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} />
+      {/* components  */}
+      <HomeHeader
+        // here is texts of buttons 
+        first="Posts"
+        second="Communities"
+        third="Partnerships"
+
+        // this is for links @Boburov you can change this links, and add pages for this links
+        firstLink="/user/@username"
+        secondLink="/users"
+        thirdLink="/communities" />
+
+      {/* <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} /> */}
+
+      <div className="w-[95%] mx-auto">
+        <PostCard PostName={"boburov.dev"} UserImage={userprph} descr={"title of the post that was posted to community by ordinary user who followed to this community by changing select in post page"} PostImage={userprph} SupportNumber={718} />
+      </div>
+
     </div>
   );
 };
