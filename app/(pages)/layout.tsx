@@ -13,7 +13,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                     <Sidebar />
                 </div>
 
-                <div className="flex-1 border-x border-[#30305D] max-w-[630px]">
+                <div className="flex-1 border-x border-[#30305D] max-w-[630px] min-h-screen">
                     <Header />
                     {children}
                 </div>
