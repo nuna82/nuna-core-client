@@ -43,7 +43,7 @@ const page = () => {
           @boburov.dev
         </p>
 
-        <p className="text-[text-xs font-[robolight] text-[#8989E4] mb-4 text-justify px-3">
+        <p className="text-md font-[robolight]  text-[#8989E4] mb-4 text-center px-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         </p>
 
