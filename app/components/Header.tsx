@@ -30,12 +30,12 @@ export default function Header() {
 
                 {/* plus iconn */}
                 <Link
-                    href={pathname !== "/create-post" ? "/create-post" : "/"}
+                    href={pathname !== "/create" ? "/create" : "/"}
                     title="Add post"
                     className="bg-[#0C8CE9] w-[45px] h-[45px] cursor-pointer hover:opacity-90 rounded-lg flex items-center justify-center"
                 >
                     <Plus
-                        className={`transition-transform duration-200 ease-in-out text-white ${pathname !== "/create-post" ? "rotate-0" : "rotate-45"
+                        className={`transition-transform duration-200 ease-in-out text-white ${pathname !== "/create" ? "rotate-0" : "rotate-45"
                             }`}
                     />
                 </Link>

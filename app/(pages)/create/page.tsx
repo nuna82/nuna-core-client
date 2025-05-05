@@ -25,7 +25,7 @@ export default function CreatePost() {
                 {/* post title  */}
                 <label className="space-y-1">
                     <p className="text-[#8989E4] cursor-pointer">post title*</p>
-                    <input className="w-full bg-[#1B1B2D] p-3 rounded" placeholder="something cool" type="text" />
+                    <input className="w-full bg-[#1B1B2D] p-3 rounded" placeholder="something cool" type="text" required />
                 </label>
 
                 {/* description */}
@@ -36,7 +36,7 @@ export default function CreatePost() {
 
                 <label className="space-y-1">
                     <p className="text-[#8989E4] cursor-pointer">image (optional)</p>
-                    <div className="w-full h-[250px] bg-[#1B1B2D] rounded text-[#8989E4] flex items-center justify-center flex-col gap-3 cursor-pointer">
+                    <div className="w-full h-[250px] bg-[#1B1B2D] rounded text-[#8989E4] flex items-center justify-center flex-col gap-3 cursor-pointer select-none">
                         <ImagePlus className="scale-200" />
                         <p>Upload or drop image here</p>
                     </div>

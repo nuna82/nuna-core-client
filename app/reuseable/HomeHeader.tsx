@@ -11,13 +11,13 @@ export default function HomeHeader({ first, second, third, firstLink, secondLink
             <ul className="w-[95%] mx-auto flex items-center justify-between gap-3">
                 {/* links  here */}
                 <li className={`flex-1 text-center   ${pathname === (firstLink) ? "border-white border-b" : ""}`}>
-                    <Link className="block py-3" href="/">{first}</Link>
+                    <Link className="block py-3" href={firstLink}>{first}</Link>
                 </li>
                 <li className={`flex-1 text-center   ${pathname.startsWith(secondLink) ? "border-white border-b" : ""}`}>
-                    <Link className="block py-3" href="/users">{second}</Link>
+                    <Link className="block py-3" href={secondLink}>{second}</Link>
                 </li>
                 <li className={`flex-1 text-center   ${pathname.startsWith(thirdLink) ? "border-white border-b" : ""}`}>
-                    <Link className="block py-3" href="/communities">{third}</Link>
+                    <Link className="block py-3" href={thirdLink}>{third}</Link>
                 </li>
             </ul>
         </div>
