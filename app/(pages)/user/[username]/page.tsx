@@ -84,7 +84,7 @@ const page = () => {
 
       {/* <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} /> */}
 
-      <div className="w-[95%] mx-auto">
+      <div className="mx-auto">
         <PostCard PostName={"boburov.dev"} UserImage={userprph} descr={"title of the post that was posted to community by ordinary user who followed to this community by changing select in post page"} PostImage={userprph} SupportNumber={718} />
       </div>
 

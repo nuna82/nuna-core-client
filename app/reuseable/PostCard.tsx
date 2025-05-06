@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
 // lucide icons
-import { MessageSquare, ArrowBigUp } from "lucide-react";
+import { MessageSquare, ArrowBigUp, EllipsisVertical } from "lucide-react";
 
 export default function Home({
   PostName,
@@ -48,7 +48,7 @@ export default function Home({
         </div>
 
         {/* support  */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between py-2">
           {/* comment  */}
           <div className="flex items-center gap-1 text-[#8989E4] cursor-pointer select-none">
             <MessageSquare />
@@ -56,9 +56,14 @@ export default function Home({
           </div>
 
           {/* support number */}
-          <div className="flex items-center gap-1 cursor-pointer select-none">
-            <ArrowBigUp className="text-[#8989E4]" />
-            <span>{SupportNumber}</span>
+          <div className="flex gap-5">
+            <div className="flex items-center gap-1 cursor-pointer select-none">
+              <ArrowBigUp className="text-[#8989E4]" />
+              <span>{SupportNumber}</span>
+            </div>
+            <button>
+              <EllipsisVertical />
+            </button>
           </div>
         </div>
       </div>

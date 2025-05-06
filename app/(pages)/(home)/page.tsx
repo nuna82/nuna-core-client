@@ -19,6 +19,9 @@ export default function Home() {
           </li>
         );
       })}
+      <div className="py-5 flex justify-center">
+        <p>no more posts here...</p>
+      </div>
     </ul>
   );
 }
