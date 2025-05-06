@@ -11,7 +11,7 @@ import PostCard from "@/app/reuseable/PostCard";
 
 export default function Home() {
   return (
-    <ul className="w-[95%] mx-auto">
+    <ul className="w-full mx-auto">
       {posts.map((post, id) => {
         return (
           <li key={id} >
