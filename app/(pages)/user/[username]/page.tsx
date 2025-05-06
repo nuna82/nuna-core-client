@@ -8,9 +8,8 @@ import { ArrowBigUp, Link, MessageSquare } from "lucide-react";
 import { usePathname } from "next/navigation";
 import PostCard from "@/app/reuseable/PostCard";
 
-// components 
+// components
 import HomeHeader from "@/app/reuseable/HomeHeader";
-
 
 const page = () => {
   return (
@@ -26,11 +25,13 @@ const page = () => {
         />
 
         {/* Profile image wrapper */}
-        <Image
-          src={userprph} // replace with your circle image
-          alt="Profile"
-          className="w-32 h-32 object-cover z-10 rounded-full border-4 border-[#05050D] absolute bottom-5 "
-        />
+        <div className="w-32 h-32 z-10 rounded-full border-4 border-[#05050D] absolute bottom-3 overflow-hidden bg-[#05050D]">
+          <Image
+            src={userprph} // replace with your circle image
+            alt="Profile"
+            className="object-cover w-full h-full"
+          />
+        </div>
       </section>
 
       {/* user information */}
@@ -72,22 +73,29 @@ const page = () => {
 
       {/* components  */}
       <HomeHeader
-        // here is texts of buttons 
+        // here is texts of buttons
         first="Posts"
         second="Communities"
         third="Partnerships"
-
         // this is for links @Boburov you can change this links, and add pages for this links
         firstLink="/user/@username"
         secondLink="/users"
-        thirdLink="/communities" />
+        thirdLink="/communities"
+      />
 
       {/* <PostCard name="boburov.dev" image={userprph} likes={718} comments={91} /> */}
 
       <div className="mx-auto">
-        <PostCard PostName={"boburov.dev"} UserImage={userprph} descr={"title of the post that was posted to community by ordinary user who followed to this community by changing select in post page"} PostImage={userprph} SupportNumber={718} />
+        <PostCard
+          PostName={"boburov.dev"}
+          UserImage={userprph}
+          descr={
+            "title of the post that was posted to community by ordinary user who followed to this community by changing select in post page"
+          }
+          PostImage={userprph}
+          SupportNumber={718}
+        />
       </div>
-
     </div>
   );
 };
