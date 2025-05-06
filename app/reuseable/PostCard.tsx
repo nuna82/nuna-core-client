@@ -31,22 +31,21 @@ export default function Home({
           />
           <p>{PostName}</p>
         </Link>
-
         {/* descr  */}
-        <p>{descr}</p>
-
+        <p className=" text-lg font-semibold">{descr}</p>
         {/* image */}
-        <div className="aspect-video overflow-hidden rounded-lg relative">
-          <Image
-            className="w-full h-full object-cover"
-            src={PostImage}
-            alt={PostName}
-          />
-          <div className="w-full h-full bg-black/50 absolute top-0 left-0 backdrop-blur-lg flex justify-center items-center">
-            <Image className="h-full w-auto" src={PostImage} alt={PostName} />
+        {PostImage && (
+          <div className="aspect-video overflow-hidden rounded-lg relative">
+            <Image
+              className="w-full h-full object-cover"
+              src={PostImage}
+              alt={PostName}
+            />
+            <div className="w-full h-full bg-black/50 absolute top-0 left-0 backdrop-blur-lg flex justify-center items-center">
+              <Image className="h-full w-auto" src={PostImage} alt={PostName} />
+            </div>
           </div>
-        </div>
-
+        )}
         {/* support  */}
         <div className="flex items-center justify-between py-2">
           {/* comment  */}
@@ -61,7 +60,7 @@ export default function Home({
               <ArrowBigUp className="text-[#8989E4]" />
               <span>{SupportNumber}</span>
             </div>
-            <button>
+            <button className="cursor-pointer">
               <EllipsisVertical />
             </button>
           </div>

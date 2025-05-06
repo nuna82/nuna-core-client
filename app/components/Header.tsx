@@ -12,7 +12,7 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="w-full sticky top-0 py-5 bg-[#05050D]/80 backdrop-blur-lg z-50">
+        <header className="w-full sticky top-0 py-5 bg-[#05050D]/80 backdrop-blur-lg z-30">
             
             <div className="w-[95%] flex items-center justify-between mx-auto gap-3">
                 {/* Left icon */}
