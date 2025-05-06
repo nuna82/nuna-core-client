@@ -70,7 +70,8 @@ export default function Community() {
                 <label className="space-y-1">
                     <p className="text-[#8989E4] cursor-pointer">Community unique name*</p>
                     <input className="w-full bg-[#1B1B2D] p-3 rounded" placeholder="something cool" type="text" required />
-                    <p className="text-[#8989E4]">unique name is available</p>
+                    <p className="text-green-500">unique name is available</p>
+                    <p className="text-red-500">unique name is not available</p>
                 </label>
 
                 {/* btn  */}

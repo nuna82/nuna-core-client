@@ -1,5 +1,6 @@
 
 // components 
+import Footer from "@/app/components/Footer";
 import HomeHeader from "@/app/reuseable/HomeHeader";
 
 export default function AddPost({ children }: { children: React.ReactNode }) {
