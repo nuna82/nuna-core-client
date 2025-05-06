@@ -38,7 +38,7 @@ export default function ToastProvider({ children }: ToastProviderProps) {
           <Image src={palma} className="h-screen" alt="image" />
           <div className="flex flex-col justify-between py-10 px-15 flex-1">
             <Link href="/" className="inline-block">
-              <Image src={logo} alt="image" width={150} />
+              <Image src={logo} alt="image" width={80} />
             </Link>
 
             {children}

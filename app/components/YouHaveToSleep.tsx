@@ -14,7 +14,7 @@ const YouHaveToSleep = () => {
   {
     if (showModal)
       return (
-        <div className="absolute w-full h-full bg-white">
+        <div className="absolute w-full h-full bg-white z-50">
           <div className="bg-black text-white min-h-screen flex items-center justify-center px-4">
             <div className="text-center">
               <h1 className="text-5xl sm:text-6xl font-bold mb-6 tracking-tight leading-tight">
