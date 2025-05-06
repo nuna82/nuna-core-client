@@ -13,7 +13,7 @@ export default function Collection() {
                 {/* post title  */}
                 <label className="space-y-1">
                     <p className="text-[#8989E4] cursor-pointer">Collection title*</p>
-                    <input className="w-full bg-[#1B1B2D] p-3 rounded" placeholder="something cool" type="text"  required/>
+                    <input className="w-full bg-[#1B1B2D] p-3 rounded" placeholder="something cool" type="text" required />
                 </label>
 
                 {/* description */}
@@ -22,6 +22,7 @@ export default function Collection() {
                     <textarea placeholder="cool description" className="bg-[#1B1B2D] w-full min-h-[100px] max-h-[150px] rounded p-3"></textarea>
                 </label>
 
+                {/* for file  */}
                 <label className="space-y-1">
                     <p className="text-[#8989E4] cursor-pointer">Banner (optional)</p>
                     <div className="w-full h-[150px] bg-[#1B1B2D] rounded text-[#8989E4] flex items-center justify-center flex-col gap-3 cursor-pointer select-none">
