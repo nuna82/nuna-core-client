@@ -7,14 +7,14 @@ const YouHaveToSleep = () => {
   useEffect(() => {
     const now = new Date();
     const currentHour = now.getHours();
-    if (currentHour >= 2) {
+    if (currentHour >= 22 || currentHour <= 2) {
       setShowModal(true);
     }
   }, []);
   {
     if (showModal)
       return (
-        <div className="absolute w-full h-full bg-white z-50">
+        <div className="fixed w-full h-full bg-white z-50">
           <div className="bg-black text-white min-h-screen flex items-center justify-center px-4">
             <div className="text-center">
               <h1 className="text-5xl sm:text-6xl font-bold mb-6 tracking-tight leading-tight">
