@@ -41,7 +41,7 @@ export default function Home({
               src={PostImage}
               alt={PostName}
             />
-            <div className="w-full h-full bg-black/50 absolute top-0 left-0 backdrop-blur-lg flex justify-center items-center">
+            <div className="w-full h-full bg-black/70 absolute top-0 left-0 backdrop-blur-lg flex justify-center items-center">
               <Image className="h-full w-auto" src={PostImage} alt={PostName} />
             </div>
           </div>
