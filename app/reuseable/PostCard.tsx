@@ -15,7 +15,7 @@ export default function Home({
   PostName: string;
   UserImage: string | StaticImageData;
   descr: string;
-  PostImage: string | StaticImageData;
+  PostImage: any | StaticImageData;
   SupportNumber: number;
 }) {
   return (
