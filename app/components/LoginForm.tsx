@@ -21,7 +21,7 @@ const LoginForm = () => {
             <label htmlFor="name">
               <span className="mb-1.5 text-[#8C8998]">your email</span>
 
-              <section className="bg-[#1B1B2D] flex items-center rounded-md px-7 space-x-4">
+              <section className="bg-[#1B1B2D] flex items-center rounded-md space-x-4 px-4">
                 <Image src={emailicon} width={24} height={24} alt="user icon" />
                 <input
                   className="h-12 w-full"
@@ -33,12 +33,16 @@ const LoginForm = () => {
             </label>
           </form>
 
-          <div className="flex items-center gap-2 mb-4">
-            <input type="checkbox" name="" id="" />
-            <p className="text-[#8C8998]">
-              allow all terms and cool stuff in{" "}
+          <div className="flex items-center gap-2 mb-2">
+            <label>
+              <input type="checkbox" className="input" />
+              <span className="custom-checkbox"></span>
+            </label>
+
+            <p className="text-[#8C8998] flex items-center mb-1 gap-1">
+              allow all terms and cool stuff
               <Link href="/terms" className="text-blue-600 underline">
-                Nuna
+                in Nuna
               </Link>
             </p>
           </div>

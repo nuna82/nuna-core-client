@@ -77,7 +77,7 @@ const SignupForm = () => {
           <label htmlFor="name">
             <span className="mb-1.5 text-[#8C8998]">your name</span>
 
-            <section className="bg-[#1B1B2D] flex items-center rounded-md px-7 space-x-4 mb-5">
+            <section className="bg-[#1B1B2D] flex items-center rounded-md px-4 space-x-4 mb-5">
               <Image
                 src={user_profile_icon}
                 width={24}
@@ -103,7 +103,7 @@ const SignupForm = () => {
           <label htmlFor="name">
             <span className="mb-1.5 text-[#8C8998]">your email</span>
 
-            <section className="bg-[#1B1B2D] flex items-center rounded-md px-7 space-x-4">
+            <section className="bg-[#1B1B2D] flex items-center rounded-md px-4 space-x-4">
               <Image src={emailicon} width={24} height={24} alt="user icon" />
               <input
                 required
