@@ -4,7 +4,7 @@ import user_profile_icon from "../icons/user_profile_icon.svg";
 import emailicon from "../icons/email_icon.svg";
 import { useState } from "react";
 import { Slide, toast } from "react-toastify";
-import Image from "next/image";
+import { Mail, User } from "lucide-react";
 
 const SignupForm = () => {
   const [userData, setUserData] = useState({
@@ -87,7 +87,7 @@ const SignupForm = () => {
 
               {/* can you just look at ogin form  */}
 
-              <img src={user_profile_icon} width={24} height={24} alt="user icon" />
+              <User />
               <input
                 required
                 autoComplete="off"
@@ -108,11 +108,10 @@ const SignupForm = () => {
             <span className="mb-1.5 text-[#8C8998]">your email</span>
 
             <section className="bg-[#1B1B2D] flex items-center rounded-md px-4 space-x-4">
-
               {/* can you just look at ogin form  */}
 
               {/* <Image src={emailicon} width={24} height={24} alt="user icon" /> */}
-              <img src={emailicon} width={24} height={24} alt="user icon" />
+              <Mail />
               <input
                 required
                 className="h-12 w-full"

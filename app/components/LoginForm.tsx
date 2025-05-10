@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import emailicon from "../icons/email_icon.svg";
 import { useState } from "react";
+import { Mail } from "lucide-react";
 
 const LoginForm = () => {
   const [isLinkSended, setLinkSended] = useState(true);
@@ -22,9 +23,8 @@ const LoginForm = () => {
               <span className="mb-1.5 text-[#8C8998]">your email</span>
 
               <section className="bg-[#1B1B2D] flex items-center rounded-md space-x-4 px-4">
-
                 {/* can you use lucide icons becouse of this image there alot of problems happening   */}
-                <img src={emailicon} width={24} height={24} alt="user icon" />
+                <Mail />
                 <input
                   className="h-12 w-full"
                   id="name"
