@@ -18,7 +18,7 @@ const LoginForm = () => {
             we will send magic link to your email, just click it
           </p>
 
-          <form action="" method="POST" className="w-1/2 mb-4">
+          <form method="POST" className="w-1/2 mb-4">
             <label htmlFor="name">
               <span className="mb-1.5 text-[#8C8998]">your email</span>
 
@@ -30,6 +30,7 @@ const LoginForm = () => {
                   id="name"
                   type="text"
                   placeholder="mail@example.com"
+                  required
                 />
               </section>
             </label>
@@ -48,7 +49,8 @@ const LoginForm = () => {
               </Link>
             </p>
           </div>
-          <button className="px-16 pt-4 pb-3.5 bg-[#0C8CE9] rounded-md">
+
+          <button className="px-16 pt-4 pb-3.5 bg-[#0C8CE9] hover:opacity-90 cursor-pointer rounded-md">
             Receive Link
           </button>
         </>

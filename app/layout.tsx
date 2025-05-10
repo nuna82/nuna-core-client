@@ -6,6 +6,8 @@ import { ToastContainer } from "react-toastify";
 import TopLoader from "./components/TopLoader";
 import Head from "next/head";
 
+import { ReduxProvider } from '../lib/store/ReduxProvider';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -35,7 +37,9 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <TopLoader />
-        {children}
+        <ReduxProvider>
+          {children}
+        </ReduxProvider>
         <ToastContainer />
       </body>
     </html>
